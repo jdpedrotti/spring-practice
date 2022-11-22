@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parks</title>
+</head>
+<body>
+
+<h1>Parks</h1>
+
+<div th:if="${parks}">
+    <ul>
+        <li th:each="park : ${parks}">
+            <span th:text="${park.name}"></span>
+        </li>
+    </ul>
+
+</div>
+
+
+
+</body>
+</html>
